@@ -1,0 +1,16 @@
+name: Test
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/cheickout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install Packages
+        run: yarn install
+      - name: Lint
+        run: yarn lint
