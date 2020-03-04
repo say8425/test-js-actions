@@ -18,5 +18,5 @@ jobs:
         uses: say8425/send-telegram-action@v1
         with: 
           telegram_key: ${{ secrets.TELEGRAM_KEY }}
-          chat_id: -34404145
+          chat_id: '-34404145'
           text: Hello World!
