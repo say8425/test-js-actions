@@ -20,3 +20,4 @@ jobs:
           telegram_key: ${{ secrets.TELEGRAM_KEY }}
           chat_id: '-34404145'
           text: Hello World!
+
