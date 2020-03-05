@@ -14,3 +14,9 @@ jobs:
         run: yarn install
       - name: Lint
         run: yarn lint
+      - name: Telegram
+        uses: say8425/sent-teleram-action@v1
+        with: 
+          key: {{ secrets.TELEGRAM_KEY }}
+          chat_id: '-344041454'
+          text: Hello World!
